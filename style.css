@@ -1,0 +1,898 @@
+
+*{
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+    font-family: 'Helvetica', sans-serif; 
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    background-color: #191919;
+    font-family: 'Helvetica', sans-serif;
+    z-index: 100000;
+    transition: 0.8s;
+}
+
+.sticky{
+    position: fixed;
+    padding: 10px 10px;
+    top: 0;
+    width: 100%;
+}
+
+.logo{
+    color: rgb(223, 221, 221);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+.logo a{
+    color: rgb(223, 221, 221);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.logo img{
+    width: 115px;
+    height: 50px;
+}
+.linker{
+    display: flex;
+    justify-content: space-around; 
+    transition: 0.6s;
+}
+
+.linker li{
+    list-style: none;
+    color: #fff;
+    padding-right: 30px;
+
+
+
+}
+
+.linker a{
+    color: rgb(223, 221, 221);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.linker a:hover{
+    cursor: pointer;
+    background: #fff;
+    color: #000;
+
+}
+
+
+#hovedside{
+    width: 100%;
+    height: 600px;
+}
+
+.midten{
+    text-align: center;
+    color: #fff;
+    padding-top: 180px;
+
+}
+
+.midten h1{
+    font-size: 70px;
+}
+
+.hovedknapper{
+    margin: 30px auto 0;
+}
+
+.hovedknapper a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 0;
+    color: #fff;
+    border: .5px solid #fff;
+
+}
+.hovedknapper a:hover{
+    cursor: pointer;
+    background: #fff;
+    color: #000;
+}
+
+ 
+.midten{
+    width: 100%;
+    height: 600px;
+    float: left;
+    background: linear-gradient(rgba(0,0,0,0.55),#484848), url(frisør.png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+#om-oss{
+    background-color: #191919;
+    width: 100%;
+    height: 150px;
+}
+ /*  Om oss CSS              */
+#oss1{
+    color: #ffffff;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 10px;
+    
+}
+
+#oss2{
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin: auto;
+    text-align: center;
+      
+}
+
+ /* On smaller screens, decrease text size */
+ @media only screen and (max-width: 300px) {
+    #oss1, #oss2 {font-size: 11px}
+  }
+
+
+
+/*Css for galleri   */
+#galleri{
+    background-color: #191919;
+    width: 100%;
+    height: 460px;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin-bottom: 50px;
+    margin: auto;
+    text-align: center;
+    
+   
+  }
+
+  .minslides img{
+   border: 5px solid #fff;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 3px 3px ;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 3;
+    border-radius: 1px 1px;
+  }
+  .prev {
+    left: 3;
+    border-radius: 1px 1px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+
+  
+ 
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+  
+
+        
+
+/* Slutt på Galleri */
+
+
+/* CSS Åpningstider    */
+#Åpningstider{
+    background-color: #fff;
+    width: 100%;
+    height:350px;
+}
+
+.Åpningstider-tabell table{
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    width: 35%;
+    height: 65%;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-collapse: collapse; 
+    
+}
+.Åpningstider-tabell tr{
+    border-bottom: 1pt solid #000;
+    border-top: 1pt solid #000;
+    border-left: 1pt solid #000;
+    border-right: 1pt solid #000;
+}
+
+.Åpningstider-tabell td{
+    border-bottom: 1pt solid #000;
+    border-top: 1pt solid #000;
+    border-left: 1pt solid #000;
+    border-right: 1pt solid #000;
+}
+
+
+
+.tider h1{
+    color: #000;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+
+
+
+/*  Pris CSS              */
+#pris{
+    background-color: #191919;
+    width: 100%;
+    height: 325px;
+}
+#pris1{
+    color: #ffffff;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 10px;
+
+}
+
+#pris2{
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.pristabell table{
+    background-color: #191919;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    width: 35%;
+    height: 65%;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-collapse: collapse; 
+    
+}
+.pristabell table tr{
+    border-bottom: 1pt solid #fff;
+}
+
+/* CSS anmeldelser  */
+
+#Anmeldelser{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column; 
+    background-color: #fff;
+    width: 100%;
+    height: 550px;
+}
+
+.kunde{
+    letter-spacing: 1px;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.kunde h1{
+    font-size: 2.2rem;
+    font-weight: 500;
+    background-color: #202020;
+    color: #ffffff;
+    padding: 10px 20px;
+}
+
+.kunde span{
+    font-size: 1.3rem;
+    color: #252525;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    
+}
+
+.kunde-boks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.boks1{
+    width: 500px;
+    box-shadow: 2px 2px 30px rgb(0,0,0,0.1);
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.profil-bilde{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.profil-bilde img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profil{
+    display: flex;
+    align-items: center;
+}
+
+.brukernavn{
+    display: flex;
+    flex-direction: column;
+}
+
+.brukernavn strong{
+    color: #3d3d3d;
+    font-size: 1.1rem;
+    letter-spacing: 0.5;
+}
+
+.stjerner{
+    color: #f9d71c;
+}
+
+.boks-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.kunde-kommentar p{
+    font-size: 0.9rem;
+    color: #4b4b4b ;
+    font-family: 'Inter', sans-serif;
+}
+
+.boks1:hover{
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
+}
+
+
+/* Slutten av anmeldelser  */
+
+#kart{
+    background-color: #191919;
+    width: 100%;
+    height: 450px;
+}
+
+#Kart_h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 40px;
+    margin: 10px;
+    padding-top: 20px;
+}
+
+#Googlemap {
+    margin: 0 auto;
+    display: block;
+    width: 70%;
+}
+
+/* slutt av kart  */
+
+footer*{
+    margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+    max-width: 1170px;
+    margin:auto;
+    height: 120px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style: none;
+}
+
+.footer{
+    background-color: #252525;
+    padding: 25px 0;
+}
+
+
+
+.footer-col{
+    width: auto;
+    text-align: center;
+}
+
+.footer-col h4{
+    padding-left: 30px;
+    font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	font-weight: 500;
+    margin-bottom: 10px;
+	position: relative;
+}
+.footer-col li{
+  
+	color: #ffffff;
+	
+}
+
+#sosiale-medier{
+    padding-left: 1px;
+    font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #fff;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+}
+
+.footer-col .social-links a{
+	display: inline-flex;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+
+
+/* Logg inn side  */
+.logginn{
+    width: 320px;
+    height: 420px;
+    color: rgb(1, 1, 1);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+
+}
+
+.h1{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 22px;
+}
+
+.logginn p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.logginn input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.logginn input[type="text"], input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #000000;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #000;
+    font-size: 16px;
+
+}
+
+.logginn input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #000000;
+    color: #fff;
+    font-size: 18px; 
+    border-radius: 20px;
+
+}
+.logginn input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: grey;
+    color: #000;
+}
+
+.error {
+    background: #F2DEDE;
+    color: #A94442;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+}
+
+
+/* Booking css */
+#bestill{
+    width: 100%;
+    height: 600px;
+    background-color:#fff;
+}
+
+#bestill h2 {
+    color: #000;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 5px;
+}
+
+
+#bestill form{
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px 0;
+}
+
+.booking-tabell input, label, textarea{
+    display: block;
+    padding-top: 5px;
+    margin: 0 auto;
+    width: 100%;
+    color: #000;
+}
+
+.booking-tabell input[type=submit]{
+    background-color: #000;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 18px;
+    border-bottom: none;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+
+  
+  .box select {
+    background-color: #fff;
+    color: #000;
+    padding: 9px;
+    width: 500px;
+    border: none;
+    font-size: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    outline: none;
+  }
+  
+  
+  .box select option {
+    padding: 30px;
+  }
+
+  
+
+/*Kontakt oss css */
+
+#Åpningstider-kontakt{
+    height:400px;
+}
+
+.Åpningstider-kontaktoss table{
+    background-color: #fff;
+    color: #000;
+    font-size: 20px;
+    width: 30%;
+    height: 65%;
+    margin-left:auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 5px;
+    border-collapse: collapse; 
+
+}
+
+.tider-kontakt h1{
+    color: #000;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 20px;
+}
+#kontaktoss{
+    width: 100%;
+    height: 600px;
+    background-color:#fff;
+}
+
+#kontaktoss h2{
+    color: #000;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 5px;
+}
+
+#kontaktoss h3{
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+#kontaktoss form{
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px 0;
+}
+
+.kontakt-tabell input, label, textarea{
+    display: block;
+    padding-top: 5px;
+    resize: none;
+    margin: 0 auto;
+    width: 100%;
+    color: #000;
+}
+
+.kontakt-tabell input,textarea{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #000;
+}
+
+.kontakt-tabell input[type=submit]{
+    background-color: #000;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 18px;
+    border-bottom: none;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.kontakt-tabell input[type=submit] :hover{
+    background:grey;
+    color: #000;
+}
+.kontakt-tabell input,textarea{
+    color: #000;
+    font-size: 18px;
+
+}
+
+.kontakt-tabell input :focus, textarea :focus{
+    outline: 1px solid #000;
+
+}
+
+/* Min side css   */
+#avtaledelen {
+    background-color:#fff;
+    width: 100%;
+    height: 500px;
+}
+
+.avtaler h2{
+    color: #000;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 5px;
+}
+
+.avtaler table{
+    border-collapse: collapse; 
+    width: 70%;
+    height: 10%;
+    margin-left:auto;
+    margin-right: auto;
+    font-size: 0.9em;
+    min-width: 400px;
+    text-align: center;
+
+}
+
+.avtaler table thead{
+    background-color: gray;
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+.avtaler th, .avtaler td{
+    padding: 12px 15px;
+}
+
+.avtaler tr{
+    border-bottom: 1px solid #dddddd;
+}
+.avtaler td :nth-of-type(even){
+    background-color: #f3f3f3;
+}
+
+
+
+#beskjed-delen {
+    background-color:#fff;
+    width: 100%;
+    height: 500px;
+}
+ 
+.beskjed1 h2{
+    color: #000;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 5px;
+}
+
+.beskjed1 table{
+    border-collapse: collapse; 
+    width: 70%;
+    height: 10%;
+    margin-left:auto;
+    margin-right: auto;
+    font-size: 0.9em;
+    min-width: 400px;
+    text-align: center;
+
+}
+
+.beskjed1 thead{
+    background-color: gray;
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+.beksjed1 th, .beksjed1 td{
+    padding: 12px 15px;
+}
+
+.beksjed1 tr{
+    border-bottom: 1px solid #dddddd;
+}
+.beksjed1 td :nth-of-type(even){
+    background-color: #f3f3f3;
+}
+
+
+
+

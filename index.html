@@ -1,0 +1,454 @@
+<!DOCTYPE>
+<html> 
+    <head>
+        <title> Nettside Frisør  </title>
+        <link rel=" stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/0ed0f6f26c.js" crossorigin="anonymous"></script>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <!-- Navigasjonsbar -->
+        
+            <nav>
+            <div class="logo">
+                <h1><a href="index.html"><img src="logo.png" alt=""> </a> </h1>
+            </div>
+
+           
+
+                <ul class="linker">
+                    <li><a href="index.html"> HJEM </a> </li>
+                    <li><a href="booking.php"> BOOKING </a> </li>
+                    <li><a href="kontakt_oss.php"> KONTAKT OSS </a> </li>
+                    <li><a href="logginn.php"> LOGG INN </a> </li>
+                </ul>
+            </nav>
+    
+            <script type="text/javascript">
+                window.addEventListener("scroll", function(){
+                    var nav = document.querySelector("nav");
+                    nav.classList.toggle("sticky", window.scrollY > 0)
+                })
+            </script>
+        
+
+            <!-- midten av forsiden-->
+            <section id="hovedside">
+                <div class="midten">
+                <h1> Velkommen </h1>
+                <div class="hovedknapper">
+                    <a href="booking.php"> Book Nå </a>
+                </div>
+            
+            </div>   
+            </section>
+             <!-- slutten av forsiden-->
+
+
+             <!-- Om oss side-->
+            <section id="om-oss">
+            <div class="bilde">
+                <img src=""> 
+
+                <h1 id="oss1">Om oss </h1> 
+                <p id="oss2"> Saxoføn frisør, er en frisørsalong i hyggelige lokaler midt i Oslo sentrum.
+                    <br>Her kan du sitte og slappe av med en god kopp kaffe, og en hyggelig prat.
+                    <br>Frisørene har 15 års erfaring fra frisør yrket, og dette gjenspeiles i kvaliteten de leverer. </p>
+
+            </div>
+        </section>
+
+        
+            <!-- Galleri delen-->
+            <section id="galleri">
+               <!-- <h1 id="galleri1">Galleri </h1> -->
+                <div class="slideshow-container">
+
+                    <div class="minSlides ">
+    
+                      <img src="saxfo10.jpg">
+                    
+                    </div>
+                    
+                    <div class="minSlides ">
+
+                      <img src="saxfo2.jpg">
+                    
+                    </div>
+                    
+                    <div class="minSlides">
+    
+                      <img src="saxfo3.jpg">
+                    
+                    </div>
+
+                    <div class="minSlides ">
+                        <img src="saxfo4.jpg">
+                      
+                      </div>
+
+                      <div class="minSlides ">
+                        <img src="saxfo5.jpg">
+                      
+                      </div>
+
+                      <div class="minSlides ">
+                        <img src="saxfo6.jpg">
+                      
+                      </div>
+
+                      <div class="minSlides ">
+                        <img src="saxfo7.jpg">
+                      
+                      </div>
+
+                      <div class="minSlides ">
+                        <img src="saxfo9.jpg">
+                      
+                      </div>
+
+                      <div class="minSlides ">
+                        <img src="saxfo8.jpg">
+                      
+                      </div>
+
+                      <div class="minSlides ">
+                        <img src="saxfo11.jpg">
+                      
+                      </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                    
+                    </div>
+                    <br>
+                    
+                    <div style="text-align:center">
+                      <span class="dot" onclick="currentSlide(1)"></span> 
+                      <span class="dot" onclick="currentSlide(2)"></span> 
+                      <span class="dot" onclick="currentSlide(3)"></span>
+                      <span class="dot" onclick="currentSlide(4)"></span> 
+                      <span class="dot" onclick="currentSlide(5)"></span> 
+                      <span class="dot" onclick="currentSlide(6)"></span> 
+                      <span class="dot" onclick="currentSlide(7)"></span> 
+                      <span class="dot" onclick="currentSlide(8)"></span> 
+                      <span class="dot" onclick="currentSlide(9)"></span>
+                      <span class="dot" onclick="currentSlide(10)"></span>  
+                    </div>
+                    
+                    <script>
+                    let slideIndex = 1;
+                    showSlides(slideIndex);
+                    
+                    function plusSlides(n) {
+                      showSlides(slideIndex += n);
+                    }
+                    
+                    function currentSlide(n) {
+                      showSlides(slideIndex = n);
+                    }
+                    
+                    function showSlides(n) {
+                      let i;
+                      let slides = document.getElementsByClassName("minSlides");
+                      let dots = document.getElementsByClassName("dot");
+                      if (n > slides.length) {slideIndex = 1}    
+                      if (n < 1) {slideIndex = slides.length}
+                      for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                      }
+                      for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                    }
+                    </script>
+            </section>
+            <!-- Slutten av galleri-->
+
+   
+
+
+            <!-- Slutten av om oss-->
+
+
+            <!-- Åpningstider side-->
+            <section id="Åpningstider">
+                <div class="tider">
+                    <h1> Åpningstider </h1>
+                    </div>
+
+                
+                        <div class="Åpningstider-tabell">
+                            <table> 
+                                <tbody>
+                                    <tr>
+                                        <td>Mandag</td>
+                                        <td>11-19</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tirsdag</td>
+                                        <td>11-19</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Onsdag</td>
+                                        <td>11-19</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Torsdag</td>
+                                        <td>11-19</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fredag</td>
+                                        <td>11-19</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lørdag</td>
+                                        <td>11-19</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Søndag</td>
+                                        <td>Stengt</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+             
+             </section>
+            <!-- Slutten av Åpningstider-->
+
+
+
+            <!-- pris side-->
+            <section id="pris">
+                <h1 id="pris1">Prisliste</h1>
+                <p id="pris2">Vi har ulike tjenester vi tilbyr i vår salong.</p>
+                <div class="prisTabell">
+                    <table> 
+                        <tbody>
+                            <tr>
+                                <td>Herreklipp:</td>
+                                <td>fra 370 kr</td>
+                            </tr>
+                            <tr>
+                                <td>Dameklipp:</td>
+                                <td>fra 500 kr</td>
+                            </tr>
+                            <tr>
+                                <td>Barneklipp:</td>
+                                <td>fra 290 kr</td>
+                            </tr>
+
+                            <tr>
+                                <td>Farge/klipp:</td>
+                                <td>Fra 1300 kr</td>
+                            </tr>
+                            <tr>
+                                <td>Folie/klipp - langt:</td>
+                                <td>Fra 2200 kr</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+             
+            </section>
+            <!-- Slutten av pris side-->
+
+
+            <!-- Anmeldelser side-->
+            <section id="Anmeldelser">
+            
+                <div class="kunde">
+                <h1> Anmeldelser </h1>
+                </div>
+
+                <div class="kunde-boks">
+
+                    <!--  boks 1-->
+                    <div class="boks1">
+                        <!-- toppen av boksen-->
+                        <div class="boks-top">
+                            <!-- profil-->
+                            <div class="profil"> 
+                                <!-- bilde-->
+                                <div class="profil-bilde">
+                                <img src="pro1.jpg" />
+                                </div>
+                                <!-- navn og brukernavn-->
+                                <div class="brukernavn">
+                                    <strong> Teresa Sandnes </strong>
+                                    <span> @Teresa_sandnes  </span>
+                                </div>
+                            </div>
+                            
+                                <div class="Stjerner"> 
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    
+                                </div>    
+
+                        </div>
+                        <div class="kunde-kommentar">
+                            <p>Hyggelige og superflinke ansatte. Garantert beste frisør jeg har vært hos!!</p>
+                        </div>
+                    </div>
+
+                    <!--  boks 2-->
+                    <div class="boks1">
+                        <!-- toppen av boksen-->
+                        <div class="boks-top">
+                            <!-- profil-->
+                            <div class="profil"> 
+                                <!-- bilde-->
+                                <div class="profil-bilde">
+                                <img src="pro2.jpg" />
+                                </div>
+                                <!-- navn og brukernavn-->
+                                <div class="brukernavn">
+                                    <strong> Isak Larsen </strong>
+                                    <span> @Isak_Larsen  </span>
+                                </div>
+                            </div>
+                            
+                                <div class="Stjerner"> 
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                        
+                                </div>    
+
+                        </div>
+                        <div class="kunde-kommentar">
+                            <p>Ekstrem fornøyd med resultatet og veldig hyggelig ansatte, sterkt anbefalt👍🏻 </p>
+                        </div>
+                    </div>
+
+                    <!--  boks 3-->
+                    <div class="boks1">
+                        <!-- toppen av boksen-->
+                        <div class="boks-top">
+                            <!-- profil-->
+                            <div class="profil"> 
+                                <!-- bilde-->
+                                <div class="profil-bilde">
+                                <img src="pro3.jpg" />
+                                </div>
+                                <!-- navn og brukernavn-->
+                                <div class="brukernavn">
+                                    <strong> Maguns Støvner </strong>
+                                    <span> @Magnus_støvner  </span>
+                                </div>
+                            </div>
+                            
+                                <div class="Stjerner"> 
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    
+                                </div>    
+
+                        </div>
+                        <div class="kunde-kommentar">
+                            <p>Fantastisk klipp, og billig. Sjefen er morsom og hyggelig. Veldig profesjonelt. 
+                                10/10 fra Nord-Norge. Kommer definitivt tilbake </p>
+                        </div>
+                    </div>
+
+
+                    <!--  boks 4-->
+                    <div class="boks1">
+                        <!-- toppen av boksen-->
+                        <div class="boks-top">
+                            <!-- profil-->
+                            <div class="profil"> 
+                                <!-- bilde-->
+                                <div class="profil-bilde">
+                                <img src="pro4.jpg" />
+                                </div>
+                                <!-- navn og brukernavn-->
+                                <div class="brukernavn">
+                                    <strong> Lilly Lolo </strong>
+                                    <span> @lilly_lolo  </span>
+                                </div>
+                            </div>
+                            
+                                <div class="Stjerner"> 
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>    
+
+                        </div>
+                        <div class="kunde-kommentar">
+                            <p>Alltid strålende fornøyd etter både klipp og farge/striper her! Hyggelige og  dyktige. Anbefales på det sterkeste </p>
+                        </div>
+                    </div>
+
+                </div>
+                   
+
+             
+            </section>
+            <!-- Slutten av anmeldelser side-->
+
+            <!-- kart side-->
+            <section id="kart">
+                  
+                    <h1 id="Kart_h1">Kart</h1>
+                    <iframe id="Googlemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.814217654749!2d10.745642816096229!3d59.91863058186891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e6484d42dc1%3A0xf6fa7da0b928e1f8!2sSaxof%C3%B8n%20Hairdresser%20Oslo!5e0!3m2!1sen!2sno!4v1646269777606!5m2!1sen!2sno" 
+                    height="300" width="200" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                 
+             
+            </section>
+            <!-- Slutten av kart side-->
+
+
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>Åpningstider</h4>
+                            <ul>
+                                <li>Man-Lør: 11:00-19:00</li>
+                                <li>Søndag: STENGT</li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Kontakt oss</h4>
+                            <ul>
+                                 <li><a href="tel:45555898">Tlf: 45555898</a></li>
+                                 <li><a href="mailto:saxofon@hotmail.com">saxofon@hotmail.com</a></li>
+                                 <li>Adresse: Fredensborgveien 22, 0177 Oslo</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4 id="sosiale-medier">Sosiale medier</h4>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/Saxofon.frisor"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/saxofon_oslo/" ><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </footer>
+
+
+    </body>
+
+
+</html>
